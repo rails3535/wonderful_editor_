@@ -31,9 +31,12 @@ gem "bootsnap", ">= 1.4.4", require: false
 gem "devise_token_auth"
 
 group :development, :test do
+  gem "factory_bot_rails"
+  gem "faker"
   gem "pry-byebug"
   gem "pry-doc"
   gem "pry-rails"
+  gem "rspec-rails"
   gem "rubocop-rails"
   gem "rubocop-rspec"
 end
