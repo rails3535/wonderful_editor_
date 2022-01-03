@@ -33,12 +33,13 @@ module QiitaClone
     config.generators.system_tests = nil
 
     config.generators do |g|
-      g.template_engine false
       g.javascripts false
       g.stylesheets false
       g.helper false
+      g.template_engine false
       g.test_framework :rspec,
-                       view_specs: false,
+                       fixtures: true,
+                       view_spec: false,
                        routing_specs: false,
                        helper_specs: false,
                        controller_specs: false,
