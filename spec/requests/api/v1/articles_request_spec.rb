@@ -14,8 +14,7 @@ RSpec.describe "Api::V1::Articles", type: :request do
       aggregate_failures do
         expect(response).to have_http_status(:ok)
         expect(res.length).to eq 3
-        expect(res[0].keys).to eq ["id", "title", "body", "user"]
-        expect(res[0]["user"].keys).to eq ["id", "name", "email"]
+        expect(res[0].keys).to eq ["id", "title", "body", "user_id", "created_at", "updated_at"]
       end
     end
   end
