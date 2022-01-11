@@ -8,7 +8,7 @@ RSpec.describe "Api::V1::Articles", type: :request do
 
     it "記事の一覧が取得できる" do
       subject
-
+      binding.pry
       res = JSON.parse(response.body)
 
       aggregate_failures do
@@ -18,4 +18,7 @@ RSpec.describe "Api::V1::Articles", type: :request do
       end
     end
   end
+
+
+
 end
